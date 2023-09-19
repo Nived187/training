@@ -1,7 +1,6 @@
 
-## head , tail, cat, wc, piping, sort, uniq, expansions, diff, find, jobs,gzip, tar, xargs, ln, chown, chmod
 
-$PATH , ~ , $USER
+$PATH , ~ , $USER , 
 
 echo a.{html,css,jss}   a.html a.css a.jss
 echo {1..99}
@@ -36,8 +35,10 @@ kill -9 <pid>
 jobs
 bg 1
 fg 1
+
 tar -cf archive.tar file1 fil2 file3...    c create f file
 tar -xf archive.tar   x extract f file
+
 xargs : provide input of 1 for other cat txt | xargs rm
 hardlink : points to the original file , persist if even original copy deleted ln og.txt dup.txt
 soft link : doesnt persist when og copy deleted : ln -s og.txt dup.txt
@@ -46,6 +47,15 @@ chown -R change ownership
 drwxr-xr-x directory owner group world
 -rw-r--r-- regular file
 l link
+
+head 	first 10 lines of file optional -n no. of lines
+tail 		" last 10
+cat 		show or concatenate texts
+wc 	count characters -m  lines -l  bytes -c words -w 
+uniq 	-c adds count infront -d only print dupkicate for each line 
+chown sudo chown <user> <dir>/
+
+
 
 
 
