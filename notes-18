@@ -1,0 +1,54 @@
+
+## head , tail, cat, wc, piping, sort, uniq, expansions, diff, find, jobs,gzip, tar, xargs, ln, chown, chmod
+
+$PATH , ~ , $USER
+
+echo a.{html,css,jss}   a.html a.css a.jss
+echo {1..99}
+
+diff "file1" "file2"
+
+f file d directory
+find . -type d -name "*txt"
+find . -type d -name "*txt" -not -path 'node-module'
+
+-exec cat {} \;      for each match found do cat operation / any other operation replacing cat
+
+grep word file
+
+grep -nC 2 documentss index.md		gives two line before and after each match of documentss
+
+du -mh 		human readable format print sizes of files
+
+du -h | sort -h
+
+df = file systems
+
+history => gives history of commands with a number... !number   reperforms the query
+
+ps ax | grep "visual studio code"  find processes
+	
+top : linux processes live system
+
+kill  	sends different signals to programs
+kill -l  	different signals
+kill -9 <pid>
+jobs
+bg 1
+fg 1
+tar -cf archive.tar file1 fil2 file3...    c create f file
+tar -xf archive.tar   x extract f file
+xargs : provide input of 1 for other cat txt | xargs rm
+hardlink : points to the original file , persist if even original copy deleted ln og.txt dup.txt
+soft link : doesnt persist when og copy deleted : ln -s og.txt dup.txt
+chown -R change ownership
+
+drwxr-xr-x directory owner group world
+-rw-r--r-- regular file
+l link
+
+
+
+
+
+
